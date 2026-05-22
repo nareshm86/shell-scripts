@@ -9,3 +9,5 @@ echo "What is working directory: $PWD"
 echo "PID of the current script: $$"
 sleep 5 &
 echo "PID of the background command running just now: $!"
+echo "Line number: $LINENO"
+echo "Script executed in $SECONDS seconds"
