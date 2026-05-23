@@ -11,3 +11,8 @@ echo "Movies are ${MOVIES[@]}"
 echo "Second Movie is ${MOVIES[1]}"
 echo "Third movie is ${MOVIES[2]}"
 echo "All movies are ${MOVIES[@]}"
+
+RANK=(1 2 3)
+echo "ALL RANKS ${MOVIES[@]}"
+echo "RCB RANK ${MOVIES[0]}"
+echo "SRH Rank ${MOVIES[2]}"
