@@ -6,7 +6,7 @@ SUM=$(($NUM1+$NUM2))
 
 echo "Total value is $SUM"
 
-MOVIES=("SRH","RCH","GT")
+MOVIES=("SRH" "RCH" "GT")
 
 echo "Movies are ${MOVIES[$@]}
 echo "First movie is ${MOVIES[$0]}
