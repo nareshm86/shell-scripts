@@ -13,6 +13,6 @@ echo "Third movie is ${MOVIES[2]}"
 echo "All movies are ${MOVIES[@]}"
 
 RANK=(1 2 3)
-echo "ALL RANKS ${MOVIES[@]}"
-echo "RCB RANK ${MOVIES[0]}"
-echo "SRH Rank ${MOVIES[2]}"
+echo "ALL RANKS ${RANK[@]}"
+echo "RCB RANK ${RANK[0]}"
+echo "SRH Rank ${RANK[2]}"
