@@ -7,8 +7,7 @@ SUM=$(($NUM1+$NUM2))
 echo "Total value is $SUM"
 
 MOVIES=("SRH" "RCH" "GT")
-echo "Movies are ${MOVIES[$@]}
-echo "First movie is ${MOVIES[0]}
-echo "Second Movie is ${MOVIES[1]}
-echo "Third movie is ${MOVIES[2]}
-echo "All movies are ${MOVIES[@]}
+echo "Movies are ${MOVIES[@]}"
+echo "Second Movie is ${MOVIES[1]}"
+echo "Third movie is ${MOVIES[2]}"
+echo "All movies are ${MOVIES[@]}"
