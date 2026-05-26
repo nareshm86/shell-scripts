@@ -24,10 +24,10 @@ fi
 VALIDATE()
 {
 if [$1 -ne 0 ]; then
- echo -e "$TIMESTAMP [ERROR] $2 Failure  $N" | tee -a $LOG_FILE
+ echo -e "$TIMESTAMP [ERROR] $2 ... $R FAILURE $N" | tee -a $LOGS_FILE
  exit 1
  else 
- echo "$TIMESTAMP [info] $2 SUCCESS $N" | tee -a $LOG_FILE
+ echo "$TIMESTAMP [info] $2 ..$R SUCCESS $N" | tee -a $LOG_FILE
 fi
 }
 cp mongo.repo /etc/yum.repos.d/mongo.repo
