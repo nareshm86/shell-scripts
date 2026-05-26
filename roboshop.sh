@@ -1,8 +1,8 @@
 #!/bin/bash
 
 AMI_ID="ami-0220d79f3f480ecf5"
-ZONE_ID="Z07086101C1CVP7AT2UK4" # replace with your zone ID
-DOMAIN_NAME="daws90s.shop" # replace with your domain name
+ZONE_ID="Z0859190U0DBIVYUNS77" # replace with your zone ID
+DOMAIN_NAME="nmarriaws.xyz" # replace with your domain name
 
 for instance in $@
 do
