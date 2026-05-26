@@ -1,0 +1,687 @@
+#Region Names
+reg_names:
+  iad: 'us-ashburn-1'
+  syd: 'ap-sydney-1'
+  mel: 'ap-melbourne-1'
+  gru: 'sa-saopaulo-1'
+  vcp: 'sa-vinhedo-1'
+  yul: 'ca-montreal-1'
+  yyz: 'ca-toronto-1'
+  scl: 'sa-santiago-1'
+  cdg: 'eu-paris-1'
+  mrs: 'eu-marseille-1'
+  fra: 'eu-frankfurt-1'
+  hyd: 'ap-hyderabad-1'
+  bom: 'ap-mumbai-1'
+  mtz: 'il-jerusalem-1'
+  lin: 'eu-milan-1'
+  kix: 'ap-osaka-1'
+  nrt: 'ap-tokyo-1'
+  qro: 'mx-queretaro-1'
+  mty: 'mx-monterrey-1'
+  ams: 'eu-amsterdam-1'
+  jed: 'me-jeddah-1'
+  beg: 'eu-jovanovac-1'
+  sin: 'ap-singapore-1'
+  jnb: 'af-johannesburg-1'
+  icn: 'ap-seoul-1'
+  yny: 'ap-chuncheon-1'
+  mad: 'eu-madrid-1'
+  arn: 'eu-stockholm-1'
+  zrh: 'eu-zurich-1'
+  auh: 'me-abudhabi-1'
+  dxb: 'me-dubai-1'
+  lhr: 'uk-london-1'
+  cwl: 'uk-cardiff-1'
+  ord: 'us-chicago-1'
+  phx: 'us-phoenix-1'
+  sjc: 'us-sanjose-1'
+
+short_reg_names:
+  us-ashburn-1: 'iad'
+  ap-sydney-1: 'syd'
+  ap-melbourne-1: 'mel'
+  sa-saopaulo-1: 'gru'
+  sa-vinhedo-1: 'vcp'
+  ca-montreal-1: 'yul'
+  ca-toronto-1: 'yyz'
+  sa-santiago-1: 'scl'
+  eu-paris-1: 'cdg'
+  eu-marseille-1: 'mrs'
+  eu-frankfurt-1: 'fra'
+  ap-hyderabad-1: 'hyd'
+  ap-mumbai-1: 'bom'
+  il-jerusalem-1: 'mtz'
+  eu-milan-1: 'lin'
+  ap-osaka-1: 'kix'
+  ap-tokyo-1: 'nrt'
+  mx-queretaro-1: 'qro'
+  mx-monterrey-1: 'mty'
+  eu-amsterdam-1: 'ams'
+  me-jeddah-1: 'jed'
+  eu-jovanovac-1: 'beg'
+  ap-singapore-1: 'sin'
+  af-johannesburg-1: 'jnb'
+  ap-seoul-1: 'icn'
+  ap-chuncheon-1: 'yny'
+  eu-madrid-1: 'mad'
+  eu-stockholm-1: 'arn'
+  eu-zurich-1: 'zrh'
+  me-abudhabi-1: 'auh'
+  me-dubai-1: 'dxb'
+  uk-london-1: 'lhr'
+  uk-cardiff-1: 'cwl'
+  us-chicago-1: 'ord'
+  us-phoenix-1: 'phx'
+  us-sanjose-1: 'sjc'
+
+extra_package_server:
+  eu-amsterdam-1: 'omcs-sd-ams-lb002.opc.oracleoutsourcing.com'
+  ams: 'omcs-sd-ams-lb002.opc.oracleoutsourcing.com'
+  ap-mumbai-1: 'omcscecruvbrvj-pub.opc.oracleoutsourcing.com'
+  bom: 'omcscecruvbrvj-pub.opc.oracleoutsourcing.com'
+  uk-cardiff-1: 'omcschbmsdshaf-pub.opc.oracleoutsourcing.com'
+  cwl: 'omcschbmsdshaf-pub.opc.oracleoutsourcing.com'
+  me-dubai-1: 'omcscgbxceftty-pub.opc.oracleoutsourcing.com'
+  dxb: 'omcscgbxceftty-pub.opc.oracleoutsourcing.com'
+  eu-frankfurt-1: 'omcscbazzjexok-pub.opc.oracleoutsourcing.com'
+  fra: 'omcscbazzjexok-pub.opc.oracleoutsourcing.com'
+  sa-saopaulo-1: 'omcscdabauklwo-pub.opc.oracleoutsourcing.com'
+  gru: 'omcscdabauklwo-pub.opc.oracleoutsourcing.com'
+  ap-hyderabad-1: 'omcssdhyd-lb002.opc.oracleoutsourcing.com'
+  hyd: 'omcssdhyd-lb002.opc.oracleoutsourcing.com'
+  us-ashburn-1: 'omcscabcylivxv-pub.opc.oracleoutsourcing.com'
+  iad: 'omcscabcylivxv-pub.opc.oracleoutsourcing.com'
+  me-jeddah-1: 'omcscgajkwoshi-pub.opc.oracleoutsourcing.com'
+  jed: 'omcscgajkwoshi-pub.opc.oracleoutsourcing.com'
+  uk-london-1: 'omcscbbhetasjf-pub.opc.oracleoutsourcing.com'
+  lhr: 'omcscbbhetasjf-pub.opc.oracleoutsourcing.com'
+  mcsxteam01_iad_primaryvcn2.yml: 'omcscabcylivxv-pub.opc.oracleoutsourcing.com'
+  mcsxteam01_iad_vcnprimaryvcn2.yml: 'omcscabcylivxv-pub.opc.oracleoutsourcing.com'
+  ap-melbourne-1: 'omcsceeufpdgee-pub.opc.oracleoutsourcing.com'
+  mel: 'omcsceeufpdgee-pub.opc.oracleoutsourcing.com'
+  ap-tokyo-1: 'omcscebmxljomj-pub.opc.oracleoutsourcing.com'
+  nrt: 'omcscebmxljomj-pub.opc.oracleoutsourcing.com'
+  omcsmig: 'omcscabcylivxv-pub.opc.oracleoutsourcing.com'
+  us-chicago-1: 'omcscadnldaplb-pub.opc.oracleoutsourcing.com'
+  ord: 'omcscadnldaplb-pub.opc.oracleoutsourcing.com'
+  us-phoenix-1: 'omcscaawhsnwdi-pub.opc.oracleoutsourcing.com'
+  phx: 'omcscaawhsnwdi-pub.opc.oracleoutsourcing.com'
+  sa-santiago-1: 'omcscfbkkkordd-pub.opc.oracleoutsourcing.com'
+  scl: 'omcscfbkkkordd-pub.opc.oracleoutsourcing.com'
+  us-sanjose-1: 'omcscacompjtoi-pub.opc.oracleoutsourcing.com'
+  sjc: 'omcscacompjtoi-pub.opc.oracleoutsourcing.com'
+  ap-sydney-1: 'omcscedilgmymk-pub.opc.oracleoutsourcing.com'
+  syd: 'omcscedilgmymk-pub.opc.oracleoutsourcing.com'
+  sa-vinhedo-1: 'omcscfcvfvfvff-pub.opc.oracleoutsourcing.com'
+  vcp: 'omcscfcvfvfvff-pub.opc.oracleoutsourcing.com'
+  win_em_deployment_iad: 'omcscabcylivxv-pub.opc.oracleoutsourcing.com'
+  ca-montreal-1: 'omcs-sd-yul-lb002.opc.oracleoutsourcing.com'
+  yul: 'omcs-sd-yul-lb002.opc.oracleoutsourcing.com'
+  ca-toronto-1: 'omcsccawbmaqvz-pub.opc.oracleoutsourcing.com'
+  yyz: 'omcsccawbmaqvz-pub.opc.oracleoutsourcing.com'
+  eu-zurich-1: 'omcscbcljtpxeq-pub.opc.oracleoutsourcing.com'
+  zrh: 'omcscbcljtpxeq-pub.opc.oracleoutsourcing.com'
+
+#java_pkg_name: 'p38119912_180_461_Linux-x86-64.zip'
+java_pkg_name: 'p38434584_180_471_Linux-x86-64.zip'
+#java_checksum: '9831ae8766d3e43cdbb3960f8288210c0c7c914695ee84525eb2e4977521326c'
+java_checksum: '6550214f514590d43293cb15c347b0470ac125df5f8d4823b18dec0a61230a8e'
+#java_package_url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/p38119912_180_461_Linux-x86-64.zip'
+java_package_url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/p38434584_180_471_Linux-x86-64.zip'
+#jdk_filename: 'jdk-8u461-linux-x64.tar.gz'
+jdk_filename: 'jdk-8u471-linux-x64.tar.gz'
+#jdk_dir_vstrng: '1.8.0_461'
+jdk_dir_vstrng: '1.8.0_471'
+#x86_64_linux_pkg_name: 'oracle.mgmt_agent.230821.1905.Linux-x86_64.zip'
+#x86_64_linux_pkg_name: 'oracle.mgmt_agent.251211.2216.Linux-x86_64.zip'
+x86_64_linux_pkg_name: 'oracle.mgmt_agent.260128.1501.Linux-x86_64.zip'
+#x86_64_linux_checksum: '73a0795094e341b0f76c5069d36c88d9a188dd6972e7b1ba730585b53e9de82f'
+#x86_64_linux_checksum: '8f24477ae3f7284d84fd4386d126646be83b82a57e274fcc004ba5881d355bec'
+x86_64_linux_checksum: '255c84b391d1d5a5ade64b93dc2709084e99d2b51827fd7659ae77a78265c4ed'
+tenancy: 'aucasmp04b'
+tenancy_id: 'ocid1.tenancy.oc1..aaaaaaaajeplerwz7vz2prtc7g2gcwczygt5nfhfpb3tdb3p5ltpb3jwhpnq'
+mgmt_user_name: 'mgmt_agent'
+#latest_mgmt_agent_version: '251104.1414'
+#stable_mgmt_agent_version: '250807.1752'
+#latest_mgmt_agent_version: '251211.2216'
+#stable_mgmt_agent_version: '251104.1414'
+#latest_mgmt_agent_version: '260128.1501'
+latest_mgmt_agent_version: '260429.2104'
+stable_mgmt_agent_version: '260128.1501'
+host_lot_size: 50
+valid_mgmt_agent_version_list: ['260429.2104','260128.1501','251211.2216','251104.1414','250807.1752','250704.1404','250613.1402','250509.0302','250414.2239','250320.2307','250214.1645','250128.1929','241122.0341','241023.2127','240904.0112','240724.1411', '240628.1505','240408.1554', '230821.1905']
+mgm_agent_package:
+  x86_64:
+    '260429.2104':
+      zip:
+        file_name: 'oracle.mgmt_agent.260429.2104.Linux-x86_64.zip'
+        url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.260429.2104.Linux-x86_64.zip'
+        checksum: 'cca615ceb51556cd58e7587cf5f9d5c3bd7aeb609b80035a494e2539203b6ad2'
+      rpm:
+        file_name: 'oracle.mgmt_agent.260429.2104.Linux-x86_64.rpm'
+        url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.260429.2104.Linux-x86_64.rpm'
+        checksum: '0459e0bc3d3f0bd3fd3ceff612041911fcc0c586adbb5997d0281de920a72ea6' 
+
+    '260128.1501':
+      zip:
+        file_name: 'oracle.mgmt_agent.260128.1501.Linux-x86_64.zip'
+        url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.260128.1501.Linux-x86_64.zip'
+        checksum: '255c84b391d1d5a5ade64b93dc2709084e99d2b51827fd7659ae77a78265c4ed'
+      rpm:
+        file_name: 'oracle.mgmt_agent.260128.1501.Linux-x86_64.rpm'
+        url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.260128.1501.Linux-x86_64.rpm'
+        checksum: 'a4181302ab40c2c5b96dfcc799cae47cadf0c812f40497daa8a56930eeaafe33'  
+
+    '251211.2216':
+      zip:
+        file_name: 'oracle.mgmt_agent.251211.2216.Linux-x86_64.zip'
+        url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.251211.2216.Linux-x86_64.zip'
+        checksum: '8f24477ae3f7284d84fd4386d126646be83b82a57e274fcc004ba5881d355bec'
+      rpm:
+        file_name: 'oracle.mgmt_agent.251211.2216.Linux-x86_64.rpm'
+        url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.251211.2216.Linux-x86_64.rpm'
+        checksum: '68a3db4ae63a4bd79c8262869b3c59561567d0b286abdfb19b9ad92269bb49cd'  
+    '251104.1414':
+      zip:
+        file_name: 'oracle.mgmt_agent.251104.1414.Linux-x86_64.zip'
+        url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.251104.1414.Linux-x86_64.zip'
+        checksum: 'c3637a0bc33e79c9ce203451e53bad17f20315ef66f0db565a842ebd2643e0bb'
+      rpm:
+        file_name: 'oracle.mgmt_agent.251104.1414.Linux-x86_64.rpm'
+        url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.251104.1414.Linux-x86_64.rpm'
+        checksum: 'ba50ae51e2b6653b9e72f83c834a7b91d0440d6fcd1366039bc93ba5f0a3921e'  
+    '250807.1752':
+      zip:
+        file_name: 'oracle.mgmt_agent.250807.1752.Linux-x86_64.zip'
+        url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.250807.1752.Linux-x86_64.zip'
+        checksum: '64f778f8e0904c12577667f374ba5394a10d37f2e29f62a1750185334e0db74f'
+      rpm:
+        file_name: 'oracle.mgmt_agent.250807.1752.Linux-x86_64.rpm'
+        url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.250807.1752.Linux-x86_64.rpm'
+        checksum: '4103be185c08a5ead0f20424cdea66a933b9e40dfd5ed3249477acf1883d7505'  
+    '250704.1404':
+      zip:
+        file_name: 'oracle.mgmt_agent.250704.1404.Linux-x86_64.zip'
+        url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.250704.1404.Linux-x86_64.zip'
+        checksum: '174c84c670cbd37d404cb30f1634e3fa53c75903d3535860a3e22cd31e4c1e47'
+      rpm:
+        file_name: 'oracle.mgmt_agent.250704.1404.Linux-x86_64.rpm'
+        url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.250704.1404.Linux-x86_64.rpm'
+        checksum: '022d79adf82ef3ecdf18a1a732f53c8e8a9584e4d6c520c743e3b3862926493a'  
+    '250613.1402':
+      zip:
+        file_name: 'oracle.mgmt_agent.250613.1402.Linux-x86_64.zip'
+        url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.250613.1402.Linux-x86_64.zip'
+        checksum: '9b4d03c995f27c4a0d0eb00127996534d0c15f96f0bb70d8af336c528d373b15'
+      rpm:
+        file_name: 'oracle.mgmt_agent.250613.1402.Linux-x86_64.rpm'
+        url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.250613.1402.Linux-x86_64.rpm'
+        checksum: 'd3b8fdb143880c3aff4500b05dc603a2e7a1b997c123d8503f88281db0e8018c'    
+    '250509.0302':
+      zip:
+        file_name: 'oracle.mgmt_agent.250509.0302.Linux-x86_64.zip'
+        url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.250509.0302.Linux-x86_64.zip'
+        checksum: 'ab346116584c41e5fc4518c67759fc5eecc0aa25d88d447d700b8058c9f95fc3'
+      rpm:
+        file_name: 'oracle.mgmt_agent.250509.0302.Linux-x86_64.rpm'
+        url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.250509.0302.Linux-x86_64.rpm'
+        checksum: '2b29bbd345aa8ef070aaa85d75bdb95b40f6bea5e2407a4691c613c777fa19bf'  
+    '250414.2239':
+      zip:
+        file_name: 'oracle.mgmt_agent.250414.2239.Linux-x86_64.zip'
+        url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.250414.2239.Linux-x86_64.zip'
+        checksum: 'babbf7887b6f305931ef08cd4d783aaabdb3b6b4e05b432298bd86709a8dc1a5'
+      rpm:
+        file_name: 'oracle.mgmt_agent.250414.2239.Linux-x86_64.rpm'
+        url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.250414.2239.Linux-x86_64.rpm'
+        checksum: '8e53b8a7e8a292f4a454416a5488eac3fc69a6ee7bc7526198342e4668f3d4fc'
+    '250320.2307':
+      zip:
+        file_name: 'oracle.mgmt_agent.250320.2307.Linux-x86_64.zip'
+        url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.250320.2307.Linux-x86_64.zip'
+        checksum: 'b917e18d435728406b396c0675ae5f8b8babd271bf08bfe6179572788cf96e18'
+      rpm:
+        file_name: 'oracle.mgmt_agent.250320.2307.Linux-x86_64.rpm'
+        url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.250320.2307.Linux-x86_64.rpm'
+        checksum: '8f087981aea75177c9a3184c5d54937c3397775bc502e080e18009a0aee02768'
+    '250214.1645':
+      zip:
+        file_name: 'oracle.mgmt_agent.250214.1645.Linux-x86_64.zip'
+        url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.250214.1645.Linux-x86_64.zip'
+        checksum: '8d458ca07549ec4b6846e5dc10b16dd4aa7779223739b4254b13b6f4d7631bc2'   
+      rpm:
+        file_name: 'oracle.mgmt_agent.250214.1645.Linux-x86_64.rpm'
+        url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.250214.1645.Linux-x86_64.rpm'
+        checksum: '9b56ac040f4023bf7fdfe5f91e5ba89a297467e9d699a5d6545bc5ec5741e0a5'  
+    '250128.1929':
+      zip:
+        file_name: 'oracle.mgmt_agent.250128.1929.Linux-x86_64.zip'
+        url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.250128.1929.Linux-x86_64.zip'
+        checksum: '82dee5cd24673309e5d5742eb2dff96c32e0df0ccb8fff0266ee1d865fd8cb2f'
+      rpm:
+        file_name: 'oracle.mgmt_agent.250128.1929.Linux-x86_64.rpm'
+        url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.250128.1929.Linux-x86_64.rpm'
+        checksum: 'bd5843a5a8de3f380d8886b1b51ba437f39d3d42f28b16e212fe29d3b9f46204'
+    '241122.0341':
+      zip:
+        file_name: 'oracle.mgmt_agent.241122.0341.Linux-x86_64.zip'
+        url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.241122.0341.Linux-x86_64.zip'
+        checksum: 'bc96a520955e764b3add4ae914b87a72144acf03b664c52989e4a48de8e9ff02'
+      rpm:
+        file_name: 'oracle.mgmt_agent.241023.2127.Linux-x86_64.rpm'
+        url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.241122.0341.Linux-x86_64.rpm'
+        checksum: '17e2c81d556ec4011b9b6b999da6c5f0633d791cae114f4391688a101ff63a71'
+    '241023.2127':
+      zip:
+        file_name: 'oracle.mgmt_agent.241023.2127.Linux-x86_64.zip'
+        url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.241023.2127.Linux-x86_64.zip'
+        checksum: '91e86de73933fb0966c6e74178ac8ffcf1e6d908521b367fdd435a8c49a06b77'
+      rpm:
+        file_name: 'oracle.mgmt_agent.241023.2127.Linux-x86_64.rpm'
+        url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.241023.2127.Linux-x86_64.rpm'
+        checksum: '473f595ca9ef6098f1161c6806cb47a8ec1efabbc241d329d6a94054c10a80a1'
+    '240904.0112':
+      zip:
+        file_name: 'oracle.mgmt_agent.240904.0112.Linux-x86_64.zip'
+        url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.240904.0112.Linux-x86_64.zip'
+        checksum: '3c5802f4994c6497724d04eec0f5bd388994aebc80e3e4556fdb8e83a4192ec3'
+      rpm:
+        file_name: 'oracle.mgmt_agent.240904.0112.Linux-x86_64.rpm'
+        url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.240904.0112.Linux-x86_64.rpm'
+        checksum: 'c34219206769ebe737797fb13cf9c40f9211eb23239a0f1693c9426f1ce323d3'
+    '240724.1411':
+      zip:
+        file_name: 'oracle.mgmt_agent.240724.1411.Linux-x86_64.zip'
+        url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.240724.1411.Linux-x86_64.zip'
+        checksum: '83924c1213643ff9ef6ef78bff1f905b51d6e86f5fa752b1a073e205b64a797b'
+      rpm:
+        file_name: 'oracle.mgmt_agent.240724.1411.Linux-x86_64.rpm'
+        url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.240724.1411.Linux-x86_64.rpm'
+        checksum: '41b3bb6ff934f4824524ed592c756b0264e80c0b55a77f9aa1704ad51f272909'
+    '240628.1505':
+      zip:
+        file_name: 'oracle.mgmt_agent.240628.1505.Linux-x86_64.zip'
+        url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.240628.1505.Linux-x86_64.zip'
+        checksum: '9c0a8c217f78febdf9080fe504983e04d8ea5ddde0ab1c012c0994be5c2df399'
+      rpm:
+        file_name: 'oracle.mgmt_agent.240628.1505.Linux-x86_64.rpm'
+        url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.240628.1505.Linux-x86_64.rpm'
+        checksum: 'c9f7ec25cad7d5a251717436f34385bd114bb700e09aa1c69fa687cf44c69d89'
+    '240408.1554':
+      zip:
+        file_name: 'oracle.mgmt_agent.240408.1554.Linux-x86_64.zip'
+        url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.240408.1554.Linux-x86_64.zip'
+        checksum: 'ecd30e9824eb1fa8a33a69a3a6121103075fa342d5f288e33daf2e31f5d4167b'
+  aarch64:
+    '260429.2104':
+      zip:
+        file_name: 'oracle.mgmt_agent.260429.2104.Linux-Aarch64.zip'
+        url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.260429.2104.Linux-Aarch64.zip'
+        checksum: 'b6fe58b9a23392acea8c464a92542e6b886c5e4f548bd4d761c225482df33675'
+      rpm:
+        file_name: 'oracle.mgmt_agent.260429.2104.Linux-Aarch64.rpm'
+        url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.260429.2104.Linux-Aarch64.rpm'
+        checksum: '9738d8e0a2e85e80c24ef5688ca15650f64e80f4bd8f9c0d7e7b6061ce8d120b' 
+    '260128.1501':
+      zip:
+        file_name: 'oracle.mgmt_agent.260128.1501.Linux-Aarch64.zip'
+        url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.260128.1501.Linux-Aarch64.zip'
+        checksum: '82b1370aedba4e167c9c27d2067496902409e9ea5b792ad15c619496e9b8415c'
+      rpm:
+        file_name: 'oracle.mgmt_agent.260128.1501.Linux-Aarch64.rpm'
+        url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.260128.1501.Linux-Aarch64.rpm'
+        checksum: '83148d5ee00710371c54b19edeb21c80f83580518e3ef85c5a6817ffc562154e'   
+    '251211.2216':
+      zip:
+        file_name: 'oracle.mgmt_agent.251211.2216.Linux-Aarch64.zip'
+        url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.251211.2216.Linux-Aarch64.zip'
+        checksum: '30098952eec5274d64298af6f346327a600bdc2c0f117b0f53c0552a69fe1aab'
+      rpm:
+        file_name: 'oracle.mgmt_agent.251211.2216.Linux-Aarch64.rpm'
+        url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.251211.2216.Linux-Aarch64.rpm'
+        checksum: '06799c29f37de4099fc3d2f2f1ec849f855a323603aa1c7921c04f4eb5631516'   
+    '251104.1414':
+      zip:
+        file_name: 'oracle.mgmt_agent.251104.1414.Linux-Aarch64.zip'
+        url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.251104.1414.Linux-Aarch64.zip'
+        checksum: '2e4a21d90baf4a61b3a84646983b04a548198a28df5c9e469f578ae631aa08e5'
+      rpm:
+        file_name: 'oracle.mgmt_agent.251104.1414.Linux-Aarch64.rpm'
+        url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.251104.1414.Linux-Aarch64.rpm'
+        checksum: 'f6e0a93677e3b24bb61ab8b686d1bfe457a61f0d7b2474130a6346fedee577e1'   
+    '250807.1752':
+      zip:
+        file_name: 'oracle.mgmt_agent.250807.1752.Linux-Aarch64.zip'
+        url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.250807.1752.Linux-Aarch64.zip'
+        checksum: '53664fe64ba69c0f6175e1ebd2f8ed7ff881e2cd5e7be537a8b287ba5b9424aa'
+      rpm:
+        file_name: 'oracle.mgmt_agent.250807.1752.Linux-Aarch64.rpm'
+        url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.250807.1752.Linux-Aarch64.rpm'
+        checksum: 'bd15b61200d4b769627785902496ceebb9fc075a3f9d61ea0de0d31b59095657'  
+    '250704.1404':
+      zip:
+        file_name: 'oracle.mgmt_agent.250704.1404.Linux-Aarch64.zip'
+        url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.250704.1404.Linux-Aarch64.zip'
+        checksum: 'dd530a8714c6429c1c8fb43294747f7202c2962694c3cf850f7c5de7f721c2f3'
+      rpm:
+        file_name: 'oracle.mgmt_agent.250704.1404.Linux-Aarch64.rpm'
+        url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.250704.1404.Linux-Aarch64.rpm'
+        checksum: '78ef5aaf06be9b1da88b90169680d88890a78192cf5f3d290909124026a0cbc1'  
+    '250613.1402':
+      zip:
+        file_name: 'oracle.mgmt_agent.250613.1402.Linux-Aarch64.zip'
+        url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.250613.1402.Linux-Aarch64.zip'
+        checksum: 'cf0983ea8720dbaa4ad104ddbcc829e32453ef8f29c1fe8041b71fce0149e5d4'
+      rpm:
+        file_name: 'oracle.mgmt_agent.250613.1402.Linux-Aarch64.rpm'
+        url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.250613.1402.Linux-Aarch64.rpm'
+        checksum: 'dc079d1994c6e70f25bd990f49bf742cc301f1e45acc04f11468f62c17eb10c2'  
+    '250509.0302':
+      zip:
+        file_name: 'oracle.mgmt_agent.250509.0302.Linux-Aarch64.zip'
+        url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.250509.0302.Linux-Aarch64.zip'
+        checksum: 'eae59742a41e4a749b384a13f9b9fcacc4bb6a8460c75476a8eb8d4a52f27126'
+      rpm:
+        file_name: 'oracle.mgmt_agent.250509.0302.Linux-Aarch64.rpm'
+        url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.250509.0302.Linux-Aarch64.rpm'
+        checksum: 'a48fd51e8a1f5fd8947e719626a35a8856d43ef62f38e23f1a4f44622450d182'
+    '250414.2239':
+      zip:
+        file_name: 'oracle.mgmt_agent.250414.2239.Linux-Aarch64.zip'
+        url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.250414.2239.Linux-Aarch64.zip'
+        checksum: 'b67324568828f0d6d401630e0b4577c448eb8cc286f685999630e3c11a0cf66b'
+      rpm:
+        file_name: 'oracle.mgmt_agent.250414.2239.Linux-Aarch64.rpm'
+        url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.250414.2239.Linux-Aarch64.rpm'
+        checksum: '9b47c95b0d0b79a3a49eb8ff57a3c95433987a29b47a760a2dffd4be29c64d1c'
+    '250320.2307':
+      zip:
+        file_name: 'oracle.mgmt_agent.250320.2307.Linux-Aarch64.zip'
+        url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.250320.2307.Linux-Aarch64.zip'
+        checksum: 'b1ab841b93128e9b4cc791d913b315e188d3afd24e7caf13dbff166d6891ce51'
+      rpm:
+        file_name: 'oracle.mgmt_agent.250320.2307.Linux-Aarch64.rpm'
+        url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.250320.2307.Linux-Aarch64.rpm'
+        checksum: 'c4413dbdcf455f0c9f2506bc8121bcae1eb07fc16650e7e6b46ae9df66f50e39'  
+    '250214.1645':
+      zip:
+        file_name: 'oracle.mgmt_agent.250214.1645.Linux-Aarch64.zip'
+        url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.250214.1645.Linux-Aarch64.zip'
+        checksum: '36e1b340d4a52357c3124d961ad5c6429b1baad7f013451a1acf7cac8e2d15f8'   
+      rpm:
+        file_name: 'oracle.mgmt_agent.250214.1645.Linux-Aarch64.rpm'
+        url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.250214.1645.Linux-Aarch64.rpm'
+        checksum: '6d624d40b7c46729ccaff9205a057767483ef81fc3250db2ebcda5d6fd7cf712'   
+    '250128.1929':
+      zip:
+        file_name: 'oracle.mgmt_agent.250128.1929.Linux-Aarch64.zip'
+        url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.250128.1929.Linux-Aarch64.zip'
+        checksum: 'd40b46edf0713645f2f62ab55ad9f8b81c0df5f55a385119a0a1713a85162fc7'
+      rpm:
+        file_name: 'oracle.mgmt_agent.250128.1929.Linux-Aarch64.rpm'
+        url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.250128.1929.Linux-Aarch64.rpm'
+        checksum: '97d1d0da988704a70a573ffdb4142bb57ae1ae93469747a08872b6837f761e07'
+    '241122.0341':
+      zip:
+        file_name: 'oracle.mgmt_agent.241122.0341.Linux-Aarch64.zip'
+        url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.241122.0341.Linux-Aarch64.zip'
+        checksum: '5b873eb95ec6959f790817e8c4b7b000ac5d85251e62dae97a8d70a6bad5b4c9'
+      rpm:
+        file_name: 'oracle.mgmt_agent.241122.0341.Linux-Aarch64.rpm'
+        url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.241122.0341.Linux-Aarch64.rpm'
+        checksum: '9d2b85c1601daedbdd187a229dbbd81bf61f135c431e649cfb15c1da9eef446d'
+    '241023.2127':
+      zip:
+        file_name: 'oracle.mgmt_agent.241023.2127.Linux-Aarch64.zip'
+        url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.241023.2127.Linux-Aarch64.zip'
+        checksum: '94a28e3d5653e38be3af94a12a32e13575a9fbde235cf2993b373ab8dc1ef60c'
+      rpm:
+        file_name: 'oracle.mgmt_agent.241023.2127.Linux-Aarch64.rpm'
+        url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.241023.2127.Linux-Aarch64.rpm'
+        checksum: 'e8a59e23e6a2503161334dc28ebb73bfc75593d8249bbe7c9931eb4ab5da9978'
+    '240724.1411':
+      zip:
+        file_name: 'oracle.mgmt_agent.240724.1411.Linux-Aarch64.zip'
+        url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.240724.1411.Linux-Aarch64.zip'
+        checksum: '135982057a5dffd7ea815048574c0735a6dcfdb721eef4736770300621a141db'
+      rpm:
+        file_name: 'oracle.mgmt_agent.240724.1411.Linux-Aarch64.rpm'
+        url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.240724.1411.Linux-Aarch64.rpm'
+        checksum: '9c2bdd15d877625c2e18037c5f8d985703b808ff5c6e0bb19f60f39b30ed97b3'
+    '240628.1505':
+      zip:
+        file_name: 'oracle.mgmt_agent.240628.1505.Linux-Aarch64.zip'
+        url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.240628.1505.Linux-Aarch64.zip'
+        checksum: '242c520ae06bcfb8be15ce067877470495dba46e234d00ee528aa9f48d4a2691'
+      rpm:
+        file_name: 'oracle.mgmt_agent.240628.1505.Linux-Aarch64.rpm'
+        url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.240628.1505.Linux-Aarch64.rpm'
+        checksum: '786230e197bf473023aa2f858d0e007b28621cbe8780de3747f958eee9e7e472'
+    '240408.1554':
+        zip:
+          file_name: 'oracle.mgmt_agent.240408.1554.Linux-aarch64.zip'
+          url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.240408.1554.Linux-aarch64.zip'
+
+
+mgm_agent_pck:
+  x86_64:
+      '260429.2104':
+        file_name: 'oracle.mgmt_agent.260429.2104.Linux-x86_64.zip'
+        url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.260429.2104.Linux-x86_64.zip'
+        checksum: 'cca615ceb51556cd58e7587cf5f9d5c3bd7aeb609b80035a494e2539203b6ad2'
+      '260128.1501':
+        file_name: 'oracle.mgmt_agent.260128.1501.Linux-x86_64.zip'
+        url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.260128.1501.Linux-x86_64.zip'
+        checksum: '255c84b391d1d5a5ade64b93dc2709084e99d2b51827fd7659ae77a78265c4ed' 
+      '251211.2216':
+        file_name: 'oracle.mgmt_agent.251211.2216.Linux-x86_64.zip'
+        url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.251211.2216.Linux-x86_64.zip'
+        checksum: '8f24477ae3f7284d84fd4386d126646be83b82a57e274fcc004ba5881d355bec'  
+      '251104.1414':
+        file_name: 'oracle.mgmt_agent.251104.1414.Linux-x86_64.zip'
+        url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.251104.1414.Linux-x86_64.zip'
+        checksum: 'c3637a0bc33e79c9ce203451e53bad17f20315ef66f0db565a842ebd2643e0bb'   
+      '250807.1752':
+        file_name: 'oracle.mgmt_agent.250807.1752.Linux-x86_64.zip'
+        url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.250807.1752.Linux-x86_64.zip'
+        checksum: '64f778f8e0904c12577667f374ba5394a10d37f2e29f62a1750185334e0db74f'  
+      '250704.1404':
+        file_name: 'oracle.mgmt_agent.250704.1404.Linux-x86_64.zip'
+        url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.250704.1404.Linux-x86_64.zip'
+        checksum: '174c84c670cbd37d404cb30f1634e3fa53c75903d3535860a3e22cd31e4c1e47'  
+      '250613.1402':
+        file_name: 'oracle.mgmt_agent.250613.1402.Linux-x86_64.zip'
+        url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.250613.1402.Linux-x86_64.zip'
+        checksum: '9b4d03c995f27c4a0d0eb00127996534d0c15f96f0bb70d8af336c528d373b15'  
+      '250509.0302':
+        file_name: 'oracle.mgmt_agent.250509.0302.Linux-x86_64.zip'
+        url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.250509.0302.Linux-x86_64.zip'
+        checksum: 'ab346116584c41e5fc4518c67759fc5eecc0aa25d88d447d700b8058c9f95fc3'
+      '250414.2239':
+        file_name: 'oracle.mgmt_agent.250414.2239.Linux-x86_64.zip'
+        url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.250414.2239.Linux-x86_64.zip'
+        checksum: 'babbf7887b6f305931ef08cd4d783aaabdb3b6b4e05b432298bd86709a8dc1a5'
+      '250320.2307':
+        file_name: 'oracle.mgmt_agent.250320.2307.Linux-x86_64.zip'
+        url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.250320.2307.Linux-x86_64.zip'
+        checksum: 'b917e18d435728406b396c0675ae5f8b8babd271bf08bfe6179572788cf96e18'      
+      '250214.1645':
+        file_name: 'oracle.mgmt_agent.250214.1645.Linux-x86_64.zip'
+        url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.250214.1645.Linux-x86_64.zip'
+        checksum: '8d458ca07549ec4b6846e5dc10b16dd4aa7779223739b4254b13b6f4d7631bc2'  
+      '250128.1929':
+        file_name: 'oracle.mgmt_agent.250128.1929.Linux-x86_64.zip'
+        url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.250128.1929.Linux-x86_64.zip'
+        checksum: '82dee5cd24673309e5d5742eb2dff96c32e0df0ccb8fff0266ee1d865fd8cb2f'
+      '241122.0341':
+        file_name: 'oracle.mgmt_agent.241122.0341.Linux-x86_64.zip'
+        url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.241122.0341.Linux-x86_64.zip'
+        checksum: 'bc96a520955e764b3add4ae914b87a72144acf03b664c52989e4a48de8e9ff02'
+      '241023.2127':
+        file_name: 'oracle.mgmt_agent.241023.2127.Linux-x86_64.zip'
+        url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.241023.2127.Linux-x86_64.zip'
+        checksum: '91e86de73933fb0966c6e74178ac8ffcf1e6d908521b367fdd435a8c49a06b77'
+      '240904.0112':
+          file_name: 'oracle.mgmt_agent.240904.0112.Linux-x86_64.zip'
+          url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.240904.0112.Linux-x86_64.zip'
+          checksum: '3c5802f4994c6497724d04eec0f5bd388994aebc80e3e4556fdb8e83a4192ec3'
+      '240724.1411':
+          file_name: 'oracle.mgmt_agent.240724.1411.Linux-x86_64.zip'
+          url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.240724.1411.Linux-x86_64.zip'
+          checksum: '83924c1213643ff9ef6ef78bff1f905b51d6e86f5fa752b1a073e205b64a797b'
+      '240628.1505':
+          file_name: 'oracle.mgmt_agent.240628.1505.Linux-x86_64.zip'
+          url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.240628.1505.Linux-x86_64.zip'
+          checksum: '9c0a8c217f78febdf9080fe504983e04d8ea5ddde0ab1c012c0994be5c2df399'
+      '240408.1554':
+          file_name: 'oracle.mgmt_agent.240408.1554.Linux-x86_64.zip'
+          url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.240408.1554.Linux-x86_64.zip'
+          checksum: 'ecd30e9824eb1fa8a33a69a3a6121103075fa342d5f288e33daf2e31f5d4167b'
+      '230821.1905':
+          file_name: 'oracle.mgmt_agent.230821.1905.Linux-x86_64.zip'
+          checksum: '73a0795094e341b0f76c5069d36c88d9a188dd6972e7b1ba730585b53e9de82f'
+  aarch64:
+    '260429.2104':
+      file_name: 'oracle.mgmt_agent.260429.2104.Linux-Aarch64.zip'
+      url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.260429.2104.Linux-Aarch64.zip'
+      checksum: 'b6fe58b9a23392acea8c464a92542e6b886c5e4f548bd4d761c225482df33675' 
+    '260128.1501':
+      file_name: 'oracle.mgmt_agent.260128.1501.Linux-Aarch64.zip'
+      url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.260128.1501.Linux-Aarch64.zip'
+      checksum: '82b1370aedba4e167c9c27d2067496902409e9ea5b792ad15c619496e9b8415c' 
+    '251211.2216':
+      file_name: 'oracle.mgmt_agent.251211.2216.Linux-Aarch64.zip'
+      url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.251211.2216.Linux-Aarch64.zip'
+      checksum: '30098952eec5274d64298af6f346327a600bdc2c0f117b0f53c0552a69fe1aab'   
+    '251104.1414':
+      file_name: 'oracle.mgmt_agent.251104.1414.Linux-Aarch64.zip'
+      url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.251104.1414.Linux-Aarch64.zip'
+      checksum: '2e4a21d90baf4a61b3a84646983b04a548198a28df5c9e469f578ae631aa08e5'    
+    '250807.1752':
+      file_name: 'oracle.mgmt_agent.250807.1752.Linux-Aarch64.zip'
+      url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.250807.1752.Linux-Aarch64.zip'
+      checksum: '53664fe64ba69c0f6175e1ebd2f8ed7ff881e2cd5e7be537a8b287ba5b9424aa'  
+    '250613.1402':
+      file_name: 'oracle.mgmt_agent.250613.1402.Linux-Aarch64.zip'
+      url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.250613.1402.Linux-Aarch64.zip'
+      checksum: 'cf0983ea8720dbaa4ad104ddbcc829e32453ef8f29c1fe8041b71fce0149e5d4'  
+    '250509.0302':
+      file_name: 'oracle.mgmt_agent.250509.0302.Linux-Aarch64.zip'
+      url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.250509.0302.Linux-Aarch64.zip'
+      checksum: 'eae59742a41e4a749b384a13f9b9fcacc4bb6a8460c75476a8eb8d4a52f27126'
+
+    '250414.2239':
+      file_name: 'oracle.mgmt_agent.250414.2239.Linux-Aarch64.zip'
+      url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.250414.2239.Linux-Aarch64.zip'
+      checksum: 'b67324568828f0d6d401630e0b4577c448eb8cc286f685999630e3c11a0cf66b'
+
+    '250320.2307':
+      file_name: 'oracle.mgmt_agent.250320.2307.Linux-Aarch64.zip'
+      url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.250320.2307.Linux-Aarch64.zip'
+      checksum: 'b1ab841b93128e9b4cc791d913b315e188d3afd24e7caf13dbff166d6891ce51'  
+
+    '250214.1645':
+      file_name: 'oracle.mgmt_agent.250214.1645.Linux-Aarch64.zip'
+      url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.250214.1645.Linux-Aarch64.zip'
+      checksum: '36e1b340d4a52357c3124d961ad5c6429b1baad7f013451a1acf7cac8e2d15f8'
+
+    '250128.1929':
+      file_name: 'oracle.mgmt_agent.250128.1929.Linux-Aarch64.zip'
+      url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.250128.1929.Linux-Aarch64.zip'
+      checksum: 'd40b46edf0713645f2f62ab55ad9f8b81c0df5f55a385119a0a1713a85162fc7'
+
+    '241122.0341':
+      file_name: 'oracle.mgmt_agent.241122.0341.Linux-aarch64.zip'
+      url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.241122.0341.Linux-Aarch64.zip'
+      checksum: '5b873eb95ec6959f790817e8c4b7b000ac5d85251e62dae97a8d70a6bad5b4c9'
+
+    '241023.2127':
+      file_name: 'oracle.mgmt_agent.241023.2127.Linux-aarch64.zip'
+      url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.241023.2127.Linux-Aarch64.zip'
+      checksum: '94a28e3d5653e38be3af94a12a32e13575a9fbde235cf2993b373ab8dc1ef60c'
+
+    '240408.1554':
+        file_name: 'oracle.mgmt_agent.240408.1554.Linux-aarch64.zip'
+        url: 'https://objectstorage.us-ashburn-1.oraclecloud.com/p/KlgZ_nlKIq49JuHo7B2KSbobGgXVXpLFAI-Ys2Zpl4mJIGKb59kZeLmJEC7fi_Pq/n/omcs_services_domain/b/mgmt_agent_software/o/oracle.mgmt_agent.240408.1554.Linux-Aarch64.zip'
+
+    '230821.1905':
+        file_name: 'Linux-Aarch64_oracle.mgmt_agent.zip'
+
+#DB Module Params
+connector_type: 'MACS'
+credential_name: 'umdbsnmp_'
+credential_type: 'DETAILS'
+external_db_connector_string: 'External Database Connector - '
+db_port: '1521'
+protocol: 'TCP'
+role: 'NORMAL'
+db_username: 'C##UMDBSNMP'
+asm_username: 'asmsnmp'
+license_model: 'LICENSE_INCLUDED'
+vault_name: 'OCI_MGMT_GATEWAY_VAULT'
+secret_management_endpoint: 'https://ejssib3waae5q-management.kms.us-ashburn-1.oraclecloud.com'
+
+#log Analytics Module Params - Infra
+entity_type_name: 'omc_host_linux'
+agent_version: '230821.1905'
+infra_entity_type_name: [
+  "omc_host_linux",
+  "omc_mgmt_agent"
+]
+log_group_name_infra: 'lagroup'
+log_group_name_fmw: 'lagroup'
+association_entities_infra: [
+  "LinuxSyslogSource",
+  "LinuxYUMLogSource",
+  "LinuxSecureLogSource",
+  "LinuxCronLogSource",
+  "KspliceLogSource",
+  "OSWatcher Top Logs",
+  "OSWwatcher VMStat Logs"
+]
+association_entities_infra_mgmt_agent: [
+  "OrclMgmtAgentLogSource"
+]
+input_sources_infra: [
+  "LinuxSyslogSource",
+  "LinuxYUMLogSource",
+  "LinuxSecureLogSource",
+  "LinuxCronLogSource",
+  "KspliceLogSource",
+  "OSWatcher Top Logs",
+  "OSWwatcher VMStat Logs"
+]
+log_path_infra: [
+  "/var/log/messages*",
+  "/var/log/yum.log*",
+  "/var/log/secure*",
+  "/var/log/cron*",
+  "/var/log/uptrack*",
+  "/opt/oswbb/archive/oswtop/*.dat",
+  "/opt/oswbb/archive/oswvmstat/*dat"
+]
+association_entities_infra_map: {
+            "LinuxSyslogSource": "Linux Syslog Logs",
+            "LinuxYUMLogSource": "Linux YUM Logs",
+            "LinuxSecureLogSource": "Linux Secure Log",
+            "LinuxCronLogSource": "Linux Cron Log",
+            "KspliceLogSource": "Ksplice Log",
+            "OSWatcher Top Logs": "OSWatcher Top Logs",
+            "OSWwatcher VMStat Logs": "OSWwatcher VMStat Logs"
+        }
+association_entities_infra_mgmt_agent_map: {
+            "OrclMgmtAgentLogSource": "Oracle Management Agent Logs"
+}
+#log Analytics Module Params - DB
+"db_entity_type_names": ["omc_oracle_db_instance", "omc_oracle_db_listener", "omc_oracle_asm_instance",
+                         "omc_cluster_node"]
+"log_group_name_db": "lagroup"
+
+#OPSI Module - Infra
+entity_source: 'MACS_MANAGED_EXTERNAL_HOST'
+sleep_time: '15'
+
+#log Analytics Module Params - FMW
+fmw_entity_type_name_node_manager: "omc_weblogic_nodemanager"
+fmw_entity_type_name_managed_server: "omc_weblogic_j2eeserver"
