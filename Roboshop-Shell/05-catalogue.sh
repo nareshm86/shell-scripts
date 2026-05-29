@@ -84,5 +84,4 @@ fi
 systemctl daemon-reload
 systemctl enable catalogue
 systemctl start catalogue
-
 VALIDATE $? "Enable and Start the Catalogue Service"
