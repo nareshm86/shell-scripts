@@ -16,8 +16,7 @@ USERID=$(id -u)
 
 if [ $USERID -ne 0 ]; then
 {
-    echo "$TIMESTAMP [ERROR] $R Run the script with root user $N" | tee -a $LOGS_FILE
+    echo -e "$TIMESTAMP [ERROR] $R Run the script with root user $N" | tee -a $LOGS_FILE
     exit 1
-fi
 }
-
+fi
