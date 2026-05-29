@@ -26,7 +26,7 @@ echo -e "$TIMESTAMP [INFO] $2 $G SUCCESS $N" | tee -a $LOGS_FILES
 fi
 }
 
-dnf module disable nodejs -y &>> $LOGS_FILEs
+dnf module disable nodejs -y &>> $LOGS_FILES
 VALIDATE $? "disable nodejs"
 
 dnf module enable nodejs:20 -y &>> $LOGS_FILES
