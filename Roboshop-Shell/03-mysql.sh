@@ -18,6 +18,6 @@ if [ $USERID -ne 0 ]; then
 {
     echo "$TIMESTAMP [ERROR] $R Run the script with root user $N" | tee -a $LOGS_FILE
     exit 1
-if
+fi
 }
 
