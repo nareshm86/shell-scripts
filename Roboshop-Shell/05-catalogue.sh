@@ -15,7 +15,7 @@ N="\e[0m"
 if [ $USERID -ne 0 ]; then
 echo -e "$TIMESTAMP [ERROR] $R RUn the script with root user $N" | tee -a $LOGS_FILE
 exit 1
-if
+fi
 
 VALIDATE(){
 if [ $1 -ne 0 ]; then
@@ -56,11 +56,11 @@ curl -o /tmp/catalogue.zip https://roboshop-artifacts.s3.amazonaws.com/catalogue
 cd /app 
 unzip /tmp/catalogue.zip
 
-VALIADATE $? "Downloading,Extracting and unziping catalogue service"
+VALIDATE $? "Downloading,Extracting and unziping catalogue service"
 
 cd /app 
 npm install
-VALIADATE $? "Install dependencies"
+VALIDATE $? "Install dependencies"
 
 cp catalogue.service /etc/systemd/system/catalogue.service
 
