@@ -15,8 +15,24 @@ N="\e[0m"
 USERID=$(id -u)
 
 if [ $USERID -ne 0 ]; then
-{
     echo -e "$TIMESTAMP [ERROR] $R Run the script with root user $N" | tee -a $LOGS_FILE
     exit 1
-}
 fi
+
+VALIDATE(){
+if [ $? -ne 0 ]; then
+    echo -e "$TIMESTAMP [ERROR] $2 $R FAILED $N" | tee -a $LOGS_FILE
+    exit 1
+else
+    echo -e "$TIMESTAMP [INFO] $2 $G SUCCESS $N" | tee -a $LOGS_FILE
+fi
+}
+
+dnf install mysql-server -y &>> $LOGS_FILE
+VALIDATE $? "installing mysql-server"
+
+systemctl enable --now mysqld &>> $LOGS_FILE
+VALIDATE $? "Enabling and Starting mysqld"
+
+mysql_secure_installation --set-root-pass RoboShop@1 &>> $LOGS_FILE
+VALIDATE $? "Setting ROOT password"
