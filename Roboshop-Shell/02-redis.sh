@@ -28,7 +28,10 @@ fi
 }
 
 dnf list installed | grep redis
-VALIDATE $? "redis already installed"
+if [ $? -eq 0 ]; then
+echo -e "$TIMESTAMP [Info] $G redis already installed. SKIPPING $N" | tee -a $LOGS_FILE
+exit 1
+fi
 
 dnf module disable redis -y &>> $LOGS_FILE
 dnf module enable redis:7 -y &>> $LOGS_FILE
