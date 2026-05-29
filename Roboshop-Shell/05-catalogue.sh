@@ -5,6 +5,7 @@ sudo chown -R ec2-user:ec2-user $LOGS_FOLDER
 sudo chmod -R 755 $LOGS_FOLDER
 LOGS_FILES="$LOGS_FOLDER/$0.log"
 TIMESTAMP=$(date "+%Y-%m-%d %H:%M:%S")
+SCRIPT_DIR=$PWD
 USERID=$(id -u)
 
 R="\e[31m"
@@ -62,9 +63,9 @@ cd /app
 npm install
 VALIDATE $? "Install dependencies"
 
-cp catalogue.service /etc/systemd/system/catalogue.service
+cp $SCRIPT_DIR/catalogue.service /etc/systemd/system/catalogue.service
 
-cp mongo.repo /etc/yum.repos.d/mongo.repo &>> $LOGS_FILES
+cp $SCRIPT_DIR/mongo.repo /etc/yum.repos.d/mongo.repo &>> $LOGS_FILES
 VALIDATE $? "adding mongo repo"
 
 dnf install mongodb-mongosh -y &>> $LOGS_FILES
