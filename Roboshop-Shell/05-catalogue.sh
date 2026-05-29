@@ -64,13 +64,11 @@ VALIDATE $? "Install dependencies"
 
 cp catalogue.service /etc/systemd/system/catalogue.service
 
-
 cp mongo.repo /etc/yum.repos.d/mongo.repo &>> $LOGS_FILES
 VALIDATE $? "adding mongo repo"
 
 dnf install mongodb-mongosh -y &>> $LOGS_FILES
 VALIDATE $? "Installing MongoDB client "
-
 
 INDEX=$(mongosh --host mongodb.nmarriaws.xyz --eval 'db.getMongo().getDBNames().indexOf("catalogue")')
 
