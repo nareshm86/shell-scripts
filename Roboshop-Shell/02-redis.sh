@@ -23,9 +23,12 @@ VALIDATE(){
 if [ $1 -ne 0 ]; then
 echo -e "$TIMESTAMP [ERROR] $R $2 failed $N" | tee -a $LOGS_FILE
 else
-echo -e "$TIMESTAMP [INFO] $R $2 success $N" | tee -a $LOGS_FILE
+echo -e "$TIMESTAMP [INFO] $G $2 success $N" | tee -a $LOGS_FILE
 fi
 }
+
+dnf list installed | grep redis
+VALIDATE $? "redis already installed"
 
 dnf module disable redis -y &>> $LOGS_FILE
 dnf module enable redis:7 -y &>> $LOGS_FILE
