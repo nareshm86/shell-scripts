@@ -20,15 +20,15 @@ if [ $USERID -ne 0 ]; then
 fi
 
 VALIDATE(){
-if [ $1 - ne 0 ]; then
-echo "TIMESTAMP [ERROR] $R $2 failed $N" | tee -a $LOGS_FILE
+if [ $1 -ne 0 ]; then
+echo -e "$TIMESTAMP [ERROR] $R $2 failed $N" | tee -a $LOGS_FILE
 else
-echo "TIMESTAMP [INFO] $R $2 success $N" | tee -a $LOGS_FILE
+echo -e "$TIMESTAMP [INFO] $R $2 success $N" | tee -a $LOGS_FILE
 fi
 }
 
 dnf module disable redis -y &>> $LOGS_FILE
-dnf module enable redis:7 -y $>> $LOGS_FILE
+dnf module enable redis:7 -y &>> $LOGS_FILE
 VALIDATE $? "Enable reids 7 Version"
 
 dnf install redis -y &>> $LOGS_FILE
@@ -38,5 +38,5 @@ sed -i -e 's/127.0.0.1/0.0.0.0/g' -e '/protected-mode/ c protected-mode no' /etc
 VALIDATE $? "Allowing remoting connection to redis"
 
 systemctl enable --now redis &>> $LOGS_FILE
-VALIDATE $? "Enable and starting redis" | tee -a $LOGS_FILE
+VALIDATE $? "Enable and starting redis" 
 
