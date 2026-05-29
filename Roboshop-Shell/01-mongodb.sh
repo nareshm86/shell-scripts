@@ -17,7 +17,7 @@ if [ $USERID -ne 0 ]; then
     exit 1
 fi
 VALIDATE(){
-if [ $1 - ne 0 ]
+if [ $1 - ne 0 ]; then
     echo -e "$TIMESTAMP [ERROR] $2 $R Failed $N" | tee -a $LOGS_FILE
     exit 1
 else
