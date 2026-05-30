@@ -1,0 +1,15 @@
+#!/bin/bash
+[Unit]
+Description=Shipping Service
+
+[Service]
+User=roboshop
+// highlight-start
+Environment=CART_ENDPOINT=cart.nmarriaws.xyz:8080
+Environment=DB_HOST=mysql.nmarriaws.xyz
+// highlight-end
+ExecStart=/bin/java -jar /app/shipping.jar
+SyslogIdentifier=shipping
+
+[Install]
+WantedBy=multi-user.target
