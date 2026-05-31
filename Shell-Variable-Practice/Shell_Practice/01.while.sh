@@ -1,5 +1,5 @@
 #!/bin/bash
 while IFS= read -r line
 do
-echo $line
-done < helloworld.sh
+echo "$line"
+done < hellowo"rld.sh
