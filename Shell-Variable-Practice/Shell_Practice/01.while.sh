@@ -1,5 +1,5 @@
 !#/bin/bash
-whiel IFS -r read line
+while IFS= read -r line
 do
 echo $line
 done < helloworld.sh
